@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: yellow;
+        }
+        .box::first-line{
+            color: red;
+        } */
+         /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+         } */
+         /* p,a, .box,[data-color="primary"]{
+            padding-top: 45px;
+         } */
+          .box:nth-child(even){
+            background-color: aqua;
+          }
+          .boxes::after{
+            content: "Hello guys";
+            color: blue;
+          }
+          .boxes::selection{
+            color: brown;
+            background-color: chartreuse;
+          }
+          .box::first-letter{
+            color: darkorange;
+            font-size: 45px;
+          }
+          input::placeholder{
+            color: blueviolet;
+            font-size: 22px;
+          }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey im 1st child</div>
+        <div class="box">Hey i am a 2nd child</div>
+        <div class="box">Hey i am a 3rd child</div>
+        <input type="text" placeholder="type your name here..">
+    </div>
+</body>
+</html>

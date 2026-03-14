@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(79, 219, 15);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            background-color: darkblue;
+            width: 45px;
+            height: 45px;
+            color: azure;
+            /* animation: myAnimation;
+            animation-duration:1s;
+            animation-iteration-count:3;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-play-state: running; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myAnimation 1s ease-in-out 1s backwards;
+        }
+        @keyframes myAnimation {
+            from{
+
+            }
+            to{
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

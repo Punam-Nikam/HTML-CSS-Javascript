@@ -1,0 +1,239 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="300"></canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");       //<canvas> → creates drawing area
+    // getContext("2d") → allows 2D drawing
+
+
+
+    // Face
+    ctx.beginPath();         //beginPath() → starts a new drawing
+    ctx.arc(150,150,80,0,2*Math.PI);       //arc(x,y,r,start,end) → draws circle/curve
+    ctx.stroke();
+
+    // Left Eye
+    ctx.beginPath();
+    ctx.arc(120,130,5,0,2*Math.PI);
+    ctx.stroke();  //stroke() → draws only outline
+
+    // Right Eye
+    ctx.beginPath();
+    ctx.arc(180,130,5,0,2*Math.PI);
+    ctx.stroke();
+
+    // Smile
+    ctx.beginPath();
+    ctx.arc(150,160,40,0,Math.PI);
+    ctx.stroke();     //No fill() used, so eyes are hollow circles
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"
+     style="width:200px;height:200px;border:1px solid black;">
+</div>
+
+<img id="img" src="VD.jpg" draggable="true"
+     ondragstart="drag(event)" width="100">
+
+<script>
+function allowDrop(e) {
+  e.preventDefault();
+}
+
+function drag(e) {
+  e.dataTransfer.setData("text", e.target.id);
+}
+
+function drop(e) {
+  e.preventDefault();
+  var data = e.dataTransfer.getData("text");
+  e.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 50px;
+
+  background: linear-gradient(to right, blue, purple);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Gradient Text</h1>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* 1. Hover */
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+/* 2. Active */
+a:active {
+    color: red;
+}
+
+/* 3. Focus */
+input:focus {
+    border: 2px solid blue;
+}
+
+/* 4. Visited */
+a:visited {
+    color: purple;
+}
+
+/* 5. First-child */
+p:first-child {
+    color: orange;
+}
+p:nth-child(2) {
+    color: rgb(0, 255, 251);
+}
+
+</style>
+</head>
+<body>
+
+<button>Hover Me</button><br><br>
+
+<a href="#">Click Link</a><br><br>
+
+<input type="text" placeholder="Click here"><br><br>
+
+<div>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+</div>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color 1s, width 1s;
+}
+
+.box:hover {
+  background-color: red;
+  width: 200px;
+}
+
+</style></head>
+<body>
+    <div class="box"></div>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Smiley Face</title>
+</head>
+<body>
+
+<svg width="300" height="300" style="border:1px solid black; background-color: lightgray;">
+   -->
+  <!-- Face -->
+  <!-- <circle cx="150" cy="150" r="80" stroke="black" fill="yellow" /> -->
+  
+  <!-- Left Eye -->
+  <!-- <circle cx="120" cy="130" r="5" stroke="black" fill="red" stroke-width="2"/> -->
+  
+  <!-- Right Eye -->
+  <!-- <circle cx="180" cy="130" r="5" stroke="black" fill="red" stroke-width="2"/> -->
+  
+  <!-- Smile -->
+  <!-- <path d="M110 160 A40 40 0 0 0 190 160" stroke="black" fill="none" stroke-width="2"/> -->
+    
+<!-- </svg>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Download Files</h2>
+
+<a href="VD.pdf" download>Download PDF</a><br><br>
+<a href="doraimg.png" download>Download Image</a>
+
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Blog Post</h2>
+
+<form method="post" action="save.php">
+  Title: <input type="text" name="title"><br><br>
+  Content:<br>
+  <textarea name="content"></textarea><br><br>
+  <input type="submit" value="Post">
+</form>
+
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my sample project</title>
+</head>
+<style>
+    body{
+        background-color:hsl(196, 80%, 42%);
+        size: 200px;
+    }
+    h2{
+        text-align: center;
+        background-color:rgb(239, 241, 245);
+    }
+    div{
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(41, 41, 169);
+    }
+    h4{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(215, 219, 228);
+        font-size:medium;
+        color: rgb(10, 10, 10);
+    }
+    label{
+       font-style: oblique;
+       font-size: larg;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    input{
+        background-color:red;
+        color: white;
+    }
+    textarea{
+        background-color:rgb(236, 238, 245);
+    }
+</style>
+<body>
+    
+    <h2>The Student Feedback Form</h2>
+    <div>o Choose the appropriate option as per your choice!</div>
+    <h4>Are you teenager or adult?</h4>
+    <input type="radio" id="Adult" name="age" value="Adult">
+    <label for="Adult">Adult</label>
+    <input type="radio" id="Teenager" name="age" value="Teenager">
+    <label for="Teenager">Teenager</label>
+    <h4>What is your course?</h4>
+    <input type="radio" id="Science" name="course" value="Science">
+    <label for="Science">Science</label>
+    <input type="radio" id="Arts" name="course" value="Arts">
+    <label for="Arts">Arts</label>
+    <input type="radio" id="Computer" name="course" value="Computer">
+    <label for="Computer">Computer Science</label>
+    <input type="radio" id="commerce" name="course " value="commerce">
+    <label for="commerce">Commerce</label>
+    <h4>In which year are you persuing?</h4>
+    <input type="radio" id="first" name="year" value="First">
+    <label for="first">First Year</label>
+    <input type="radio" id="second" name="year" value="second">
+    <label for="second">Second Year</label>
+    <input type="radio" id="Third" name="year" value="Third">
+    <label for="Third">Third Year</label>
+    <h4>What are your hobbies?</h4>
+    <label for="comment">Type your answer here...</label><div></div>
+    <textarea name="Answer" id="comment" rows="6" cols="20"></textarea>
+    <h4>Which languages do you like?</h4>
+    <input type="checkbox" id="java" value="java">
+    <label for="java">OOP JAVA</label><div></div>
+    <input type="checkbox" id="python">
+    <label for="python">Python Programming</label><div></div>
+    <input type="checkbox" id="cpp">
+    <label for="cpp">C++ Programming</label><div></div>
+    <input type="checkbox" id="html">
+    <label for="html">HTML markup language</label>
+    <h4>which soft skill do you have best</h4>
+    <select name="skills">
+        <option value="Soft skills">Soft skills</option>
+        <option value="Communication">Communication</option>
+        <option value="Leadership">Leadership</option>
+        <option value="Public speaking">Public speaking</option>
+        <option value="management">T/B Management</option>
+    </select>
+    <h4>Do you want to submit the feedback form?</h4>
+    <input type="submit" name="YES">
+
+</body>
+</html>

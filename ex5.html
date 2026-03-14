@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navigation Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(196, 196, 236);
+      line-height: 1.6;
+    }
+
+    /* Sticky Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: rgb(140, 140, 255);
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 16px;
+      transition: backgroun 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ffffff70;
+      border-radius: 4px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box {
+      flex: 1 1 45%;
+      min-width: 300px;
+      height: 350px;
+      border: 2px solid black;
+      padding: 10px;
+      background-color: lightblue;
+    }
+
+    .box1 {
+      background-color: rgb(85, 187, 241);
+    }
+
+    .box2 {
+      background-color: rgb(80, 245, 228);
+    }
+
+    .capsule {
+      background-color: white;
+      border: 2px solid blue;
+      border-radius: 40px;
+      padding: 20px;
+      margin: 40px auto;
+      font-size: 18px;
+      max-width: 800px;
+    }
+
+    .obox {
+      background-color: orange;
+      position: fixed;
+      height: 30px;
+      width: 30px;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      border-top: 2px solid black;
+      padding: 20px;
+      text-align: center;
+      background-color: #ddd;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="boxes">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+    </div>
+
+    <p class="capsule">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos minima reprehenderit, eligendi quae natus quod fuga autem qui. Nulla asperiores nam velit iure quas impedit sed delectus accusamus natus repudiandae.
+    </p>
+  </div>
+
+  <div class="obox"></div>
+
+  <footer>
+    This is footer
+  </footer>
+
+</body>
+</html>

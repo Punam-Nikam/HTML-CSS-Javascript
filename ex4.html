@@ -1,0 +1,73 @@
+<!-- nav bar stylesheet,global var,multicolor navbar -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor navbar</title>
+    <style>
+        :root{
+            --color:rgb(244, 53, 130);
+            --secolor:rgb(106, 9, 162);
+            --fc:rgb(2, 142, 142);
+            --sc:rgb(109, 211, 6);
+            --tc:darkmagenta;
+            --ff:green;
+            --lc:blue;
+            --ac:rgb(255, 255, 255);
+        }
+        body{
+            background-color: rgb(176, 203, 247);
+        }
+        *{
+            margin: 1;
+            padding: 0;
+        }
+        nav{
+            background-color: var(--color);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 13px;
+            font-size: 18px;
+        }
+        ul li:first-child{
+            background-color:var(--fc);
+        }
+        ul li:last-child{
+            background-color: var(--lc);
+        }
+        ul li:nth-child(2){
+            background-color: var(--sc);
+        }
+        ul li:nth-child(3){
+            background-color:var(--tc);
+        }
+        ul li:nth-child(4){
+            background-color: var(--ff);
+        }
+        ul li a{
+            color: var(--ac);
+            text-decoration: none;
+        }
+    </style>
+ </head>
+ <body>
+   <header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Help</a></li>
+            <li><a href="/">Exit</a></li>
+        </ul>
+    </nav>
+   </header>
+ </body>
+ </html>

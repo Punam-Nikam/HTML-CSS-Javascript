@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in css</title>
+    <!--We can import the google fonts in html code,if we embeb a link so write it in head tag,or if we want to impot the in style tag-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&family=Ruslan+Display&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&display=swap');
+
+        h1 {
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font-family: "Creepster", "Ruslan Display", system-ui;
+            font-size: 100px;
+            /* color:aqua; */
+            /* color:#00ff00; */
+            /* color:rgba(73, 0, 75, 0.867); */
+            color: hsl(330,48%,49%);
+            text-decoration: underline;
+            text-decoration-color: rgb(12, 56, 187);
+            text-decoration-thickness:11px;
+            text-align: center;
+
+        }
+        h2{
+            text-transform: capitalize;
+            text-align: right;
+            text-decoration:underline;
+            text-decoration-style: dotted;
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            text-decoration:underline; */
+            font-family: "Henny Penny", system-ui;
+            color:chartreuse;
+
+        }
+        .lorem{
+            border: 3px solid blue;
+            text-overflow: ellipsis;
+            width: 145px;
+            overflow:hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fonts</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui nostrum accusantium. Nulla facilis id officiis soluta sunt modi odit deleniti beatae.</h2>
+    <p class="lorem">This is font vidio<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minima, velit quam architecto aliquam quia officiis porro consequuntur perferendis repellat nisi sit eos necessitatibus mollitia et. Minima explicabo excepturi quaerat repudiandae sit iste odio et, fugiat vitae veniam nostrum adipisci ducimus quasi corporis repellat.</p>
+</body>
+
+</html>

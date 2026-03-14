@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing boll</title>
+    <style>
+        .container{
+            background-color: rgb(46, 89, 243);
+            width:80vw;
+            height: 80vh;
+            position: relative;
+        }
+        .boll{
+            background-color: rgb(252, 57, 57);
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(252, 248, 248);
+            border-radius: 70px;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            animation: bounceX 3s linear infinite alternate, bounceY 1s ease-out infinite alternate; 
+           
+        }
+            @keyframes bounceX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes bounceY {
+            from{
+               bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Bouncing boll
+        <div class="boll">
+            
+        </div>
+    </div>
+</body>
+</html>

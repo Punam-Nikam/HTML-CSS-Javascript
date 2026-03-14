@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        @media only screen and (max-width: 455px) {
+            body{
+                background-color: chartreuse;
+            }
+        }
+        .boxes{
+            flex-direction: column;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color:red;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey this is media quary lecture
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
